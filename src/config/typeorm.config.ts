@@ -7,6 +7,10 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   username: 'root',
   password: 'root',
   database: 'quiz-nest',
-  entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  synchronize: true,
+  entities: ['dist/**/*.entity{ .ts,.js}'],
+  synchronize: false,
+  migrations: ['dist/migrations/*{.ts,.js}'],
+  migrationsTableName: 'migrations_typeorm',
+  migrationsRun: true,
 };
+console.log('__dirname', __dirname);

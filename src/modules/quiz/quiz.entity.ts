@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('quizez')
+@Entity('quiz')
 export class Quiz extends BaseEntity {
   @PrimaryGeneratedColumn({
     comment: 'The quiz unique identifier',
